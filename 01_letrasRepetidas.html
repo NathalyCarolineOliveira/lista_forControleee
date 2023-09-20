@@ -10,11 +10,19 @@
     */
 
     //ENTRADA
-
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
     
     //PROCESSAMENTO
+    let novaLista
+for (let contador = 0; contador < listaDeLetras.length; contador++) {
+    const letra = listaDeLetras[contador].toLowerCase();
+    if(novaLista.includes(letra) == false) {
+        novaLista.push(letra);
+    }
 
+}
     
     //SAÍDA
+    alert(novaLista.sort().join(", "))
 
 </script>
