@@ -9,13 +9,13 @@
     //ENTRADA
     
     let quantNotas = Number(prompt(`Quantas notas o aluno obteve?`));
-    let todesNotas = Number(prompt(`Informe todas as notas do aluno?`));
-    for (let controle = 1; controle <= quantNotas; controle++) {
-        document.write(`O controle agora é ${controle}</br>`);
-    }
+    let todasNotas = [];
 
     //PROCESSAMENTO
-    
+    for (let controle = 1; controle <= quantNotas; controle++) {
+        todasNotas = (todasNotas / quantNotas)
+        todasNotas.push(prompt(`Notas: ${todasNotas}`));
+    }
 
     //SAÍDA
 
