@@ -8,15 +8,20 @@
 
     //ENTRADA
     
-    let quantNotas = Number(prompt(`Quantas notas o aluno obteve?`));
-    let todasNotas = [];
+    const quantNotas = Number(prompt(`Quantas notas o aluno obteve?`));
+    let todasNotas = 0
 
     //PROCESSAMENTO
-    for (let controle = 1; controle <= quantNotas; controle++) {
-        todasNotas = (todasNotas / quantNotas)
-        todasNotas.push(prompt(`Notas: ${todasNotas}`));
+    for (let controle = 1; controle < quantNotas; controle++) {
+        let quantas = Number(prompt(`Informe a nota`).trim());
+        todasNotas += quantNotas;
+
+        
+        
     }
+    let media = todasNotas / quantNotas;
 
     //SAÍDA
+    alert(`A média das notas ${media.toFixed(1)}`)
 
 </script>

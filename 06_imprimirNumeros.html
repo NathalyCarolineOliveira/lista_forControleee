@@ -6,6 +6,10 @@
     */
 
     //ENTRADA
+    const numInicial = Number(prompt(`Informe o número inicial:`));
+    const numFinal = Number(prompt(`Informe o número final:`));
+    
+
 
     
     //PROCESSAMENTO
@@ -13,4 +17,20 @@
     
     //SAÍDA
 
+</script>
+let numerosImpares = []
+    let numerosPares = []
+    for (const num of listaDeNumeros) {
+        if (num % 2 == 0) {
+            numerosPares.push(num);
+        }
+        else {
+            numerosImpares.push(num);
+        }
+
+    }
+
+
+    //SAÍDA
+alert(`Os pares crescentes são: ${numerosPares.sort((a, b) => a - b).join(", ")} Os pares decrescentes são: ${numerosPares.reverse().join(", ")} \nOs ímpares crescentes são: ${numerosImpares.sort((a, b) => b - a).join(", ")} Os ímpares decrescentes são: ${numerosPares.reverse().join(", ")}`);
 </script>

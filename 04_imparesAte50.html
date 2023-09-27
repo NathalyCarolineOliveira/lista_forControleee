@@ -6,18 +6,17 @@
     */
 
     //ENTRADA
-    listaNum = []
-    let numImpar = []
+    let numImpar = [];
 
     //PROCESSAMENTO
     for (let index = 1; index <= 50; index++) {
-        if (index % 1 == 0){
-            numImpar.push(listaNum)
+        if (index % 2 == 1){
+            numImpar.push(index)
             
         }
         
     }
-    alert(`${listaNum}`)
+    alert(`${numImpar.join(" , ")}`)
 
 
     //SAÍDA
