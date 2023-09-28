@@ -6,22 +6,25 @@
     */
 
     //ENTRADA
-    const numeroPrimo = parseInt(prompt(`Qual número deseja validar se é número primo?`));
-    let divisivel = 0;
-    for (let contador = 1; contador <= numeroPrimo; contador++) {
-        if (numeroPrimo % contador === 0) {
-            divisivel = divisivel + 1;
-            alert(`${numeroPrimo} dividido por ${contador} sobra zero!`)
-        }
-        else {
-            alert(`${numeroPrimo} dividido por ${contador});
+    const num = Number(prompt("Informe um número:"))
 
-        if (divisivel === 2) {
-            alert(`O número ${ numeroPrimo }`)
-        } 
-        else {
-            alert(`O número ${ numeroPrimo }`)
-        }
+    //PROCESSAMENTO
+    if (num < 2) {
+        alert(`O número não é primo, pois é menor que 2.`)
+    } else {
+        let primo = true;
     }
+
+        for (let controle= 2; controle < num; controle++) {
+            if (num % controle === 0) {
+                primo = false;
+            }
+        }
+
+        if (primo) {
+            alert(`O número ${num} é primo.`)
+        } else {
+            alert(`O número ${num} não é primo.`)
+        }
 
 </script>

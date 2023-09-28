@@ -5,10 +5,17 @@
     */
 
     //ENTRADA
-
+    let soma = 0;
+    let multiplos3 = [];
 
     //PROCESSAMENTO
-
+    for (let index = 1; index <= 100; index++) {
+        if (index % 3 == 0) {
+            soma = (soma + index);
+            multiplos3.push(index);
+        }        
+    }
+    alert(`Os múltiplos de três são: \n ${multiplos3.join(" ,")} \n Soma: ${soma}.`)
 
     //SAÍDA
 

@@ -6,31 +6,23 @@
     */
 
     //ENTRADA
-    let populacao = 50000;
-    let populacao10 = 50000;
+    let popul = 50000;
+    let popul10 = 50000;
     
     //PROCESSAMENTO
-    let contador = 0;
-    let contador10 = 0;
+    let index = 0
+    let index10 = 0
 
-    for (let contador = 0; populaçao <=5; contador++) {
-        populacao *= 1.015;
-        
-        
+    for (let index = 0; popul <= 5; index++) {
+        popul = (popul * 1.015)
     }
 
-    for (let contador10 = 0; populaçao10 <=10; contador10++) {
-        populacao *= 1.015;
-        
-        
+    for (let index10 = 0; popul10 <=10; index10++) {
+        popul = (popul * 1.015)
     }
     
 
     //SAÍDA
-    alert(`Dara em 5 anos:${contador} e nós 10 anos: ${contador10}`);
-
-
-    
-    
+    alert(`Serão em 5 anos: ${index} e nós 10 anos serão: ${index10}.`)
 
 </script>

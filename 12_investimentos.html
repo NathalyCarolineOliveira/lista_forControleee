@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     PROBLEMA: Investimentos
@@ -6,10 +7,15 @@
 
     //ENTRADA
 
-
+    let dias = 0;
+    
     //PROCESSAMENTO
+    for (let index = 1000; index <= 2000; index = index * 1.02) {
+        if (index <= 2000)
+            dias++;
+    }
 
-
-    //SAÍDA
+        //SAÍDA
+        alert(`Será necessário ${dias} dias úteis.`)
 
 </script>

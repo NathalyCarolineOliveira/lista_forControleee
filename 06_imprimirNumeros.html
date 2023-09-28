@@ -8,29 +8,37 @@
     //ENTRADA
     const numInicial = Number(prompt(`Informe o número inicial:`));
     const numFinal = Number(prompt(`Informe o número final:`));
-    
 
-
-    
     //PROCESSAMENTO
 
+    let numImpares = [];
+    let numPares = [];
+    
+    if (numInicial == numFinal) {
+        alert(`Os números são iguais!`);
+    } else if (numInicial > numFinal) {
+        for (let index = numFinal; index < numInicial; index++) {
+            if (index % 2 == 0) {
+                numPares.push(index);
+            } else {
+                numImpares.push(index);
+            }
+
+        }
+    } else {
+        for (let index = numInicial; index < numFinal; index++) {
+            if (index % 2 == 0) {
+                numPares.push(index);
+            } else {
+                numImpares.push(index);
+            }
+
+        }
+    }
     
     //SAÍDA
 
-</script>
-let numerosImpares = []
-    let numerosPares = []
-    for (const num of listaDeNumeros) {
-        if (num % 2 == 0) {
-            numerosPares.push(num);
-        }
-        else {
-            numerosImpares.push(num);
-        }
-
-    }
+    alert(`Números impares: ${numImpares} e os números pares são: ${numPares}`);
 
 
-    //SAÍDA
-alert(`Os pares crescentes são: ${numerosPares.sort((a, b) => a - b).join(", ")} Os pares decrescentes são: ${numerosPares.reverse().join(", ")} \nOs ímpares crescentes são: ${numerosImpares.sort((a, b) => b - a).join(", ")} Os ímpares decrescentes são: ${numerosPares.reverse().join(", ")}`);
 </script>
